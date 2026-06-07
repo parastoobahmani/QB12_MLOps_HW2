@@ -1,0 +1,116 @@
+{
+  "duplicate_listing_cutoff_rows": 0,
+  "missing_target_count": 0,
+  "target_values": [
+    0.0,
+    1.0
+  ],
+  "present_forbidden_columns": [],
+  "future_leakage_columns_in_model_inputs": [],
+  "missing_report": {
+    "column": {
+      "0": "listing_price",
+      "1": "beds",
+      "2": "bedrooms",
+      "3": "is_superhost",
+      "4": "bathrooms",
+      "5": "neighbourhood_name",
+      "6": "room_type",
+      "7": "listing_id",
+      "8": "property_type",
+      "9": "accommodates",
+      "10": "minimum_nights",
+      "11": "maximum_nights",
+      "12": "instant_bookable",
+      "13": "total_reviews_before_cutoff",
+      "14": "unique_reviewers_before_cutoff",
+      "15": "avg_comment_len_before_cutoff",
+      "16": "max_comment_len_before_cutoff",
+      "17": "days_since_last_review",
+      "18": "available_days_last_90d",
+      "19": "available_rate_last_90d",
+      "20": "avg_minimum_nights_calendar_last_90d",
+      "21": "avg_maximum_nights_calendar_last_90d",
+      "22": "available_days_last_30d",
+      "23": "available_rate_last_30d",
+      "24": "avg_minimum_nights_calendar_last_30d",
+      "25": "avg_maximum_nights_calendar_last_30d",
+      "26": "future_calendar_days_observed_30d",
+      "27": "future_available_days_30d",
+      "28": "future_available_rate_30d",
+      "29": "high_demand_proxy",
+      "30": "cutoff_date",
+      "31": "dataset_version"
+    },
+    "missing_rate": {
+      "0": 0.4438878823404029,
+      "1": 0.44122348928913996,
+      "2": 0.02994777789619525,
+      "3": 0.011723329425556858,
+      "4": 0.0021315144410103378,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0,
+      "10": 0.0,
+      "11": 0.0,
+      "12": 0.0,
+      "13": 0.0,
+      "14": 0.0,
+      "15": 0.0,
+      "16": 0.0,
+      "17": 0.0,
+      "18": 0.0,
+      "19": 0.0,
+      "20": 0.0,
+      "21": 0.0,
+      "22": 0.0,
+      "23": 0.0,
+      "24": 0.0,
+      "25": 0.0,
+      "26": 0.0,
+      "27": 0.0,
+      "28": 0.0,
+      "29": 0.0,
+      "30": 0.0,
+      "31": 0.0
+    }
+  },
+  "label_distribution": {
+    "high_demand_proxy": {
+      "0": 1.0,
+      "1": 0.0
+    },
+    "count": {
+      "0": 7141,
+      "1": 3339
+    },
+    "percentage": {
+      "0": 0.6814,
+      "1": 0.3186
+    }
+  },
+  "calendar_coverage_summary": {
+    "index": {
+      "0": "count",
+      "1": "mean",
+      "2": "std",
+      "3": "min",
+      "4": "25%",
+      "5": "50%",
+      "6": "75%",
+      "7": "max"
+    },
+    "future_calendar_days_observed_30d": {
+      "0": 9383.0,
+      "1": 30.0,
+      "2": 0.0,
+      "3": 30.0,
+      "4": 30.0,
+      "5": 30.0,
+      "6": 30.0,
+      "7": 30.0
+    }
+  }
+}

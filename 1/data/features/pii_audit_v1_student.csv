@@ -1,0 +1,8 @@
+table,column,pii_type,decision,reason
+listing,listing_id,entity identifier,keep as entity key only,needed to define one row per listing; not a model input
+listing,host_id,host identifier,keep as entity key only,not a model input
+host,host_pseudo_id,pseudonimized id,remove,not a model input
+listing,license,sensitive data,remove,not a model input
+review,review_id,entity identifier,remove,not a model input
+review,reviewer_id,entity identifier,remove,not a model input
+review,reviewer_pseudo_id,pseudonimized id,remove,not a model input
