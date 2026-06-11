@@ -13,6 +13,8 @@ def records_to_dataframe(records: Iterable[ListingFeatures]) -> pd.DataFrame:
     """Convert validated API payloads into the exact DataFrame expected by the model."""
     rows = [record.model_dump() for record in records]
     df = pd.DataFrame(rows)
+    for x in df.columns:
+        if x in config.EXPECTED_FEATURE_COLUMNS:
 
     # TODO 1: reject unknown fields and forbidden leakage fields.
     # TODO 2: check missing fields against config.EXPECTED_FEATURE_COLUMNS.

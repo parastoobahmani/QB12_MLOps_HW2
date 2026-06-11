@@ -2,7 +2,10 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from typing import Any, Dict, Optional
-
+import os
+import mlflow 
+import mlflow.sklearn
+from mlflow.tracking import MlflowClient
 # TODO: import os, mlflow, mlflow.sklearn, MlflowClient when implementing.
 from . import config
 
@@ -38,8 +41,8 @@ class ModelService:
         # Hint:
         #   os.environ["MLFLOW_TRACKING_USERNAME"] = config.MLFLOW_TRACKING_USERNAME
         #   os.environ["MLFLOW_TRACKING_PASSWORD"] = config.MLFLOW_TRACKING_PASSWORD
-        #   mlflow.set_tracking_uri(config.MLFLOW_TRACKING_URI)
-        #   model = mlflow.sklearn.load_model(f"runs:/{config.MLFLOW_RUN_ID}/model")
+        mlflow.set_tracking_uri(config.MLFLOW_TRACKING_URI)
+        model = mlflow.sklearn.load_model(f"runs:/{config.MLFLOW_RUN_ID}/model")
         self.state.loaded = False
         self.state.error = "TODO: load model from MLflow."
 
@@ -64,3 +67,7 @@ class ModelService:
             "tags": self.state.tags,
             "error": self.state.error,
         }
+        
+
+
+
