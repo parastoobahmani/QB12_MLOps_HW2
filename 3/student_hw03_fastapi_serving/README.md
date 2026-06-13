@@ -37,16 +37,16 @@ Set your MLflow credentials:
 
 ```cmd
 set MLFLOW_TRACKING_URI=http://185.50.38.163:33014
-set MLFLOW_TRACKING_USERNAME=student_parastoo_bahmani
-set MLFLOW_TRACKING_PASSWORD=DvFe7_9vy3QUcAYCuVg
-set STUDENT_USERNAME=student_parastoo_bahmani
-set MLFLOW_EXPERIMENT_NAME=qbc12_hw02_student_parastoo_bahmani
+set MLFLOW_TRACKING_USERNAME=
+set MLFLOW_TRACKING_PASSWORD=
+set STUDENT_USERNAME=
+set MLFLOW_EXPERIMENT_NAME=
 ```
 
 If auto-selection fails, set your best HW02 run id manually:
 
 ```cmd
-set MLFLOW_RUN_ID=19ff4c277c4f4d5cb44e76eb66b2252f
+set MLFLOW_RUN_ID=
 ```
 
 Run the API:
@@ -63,7 +63,7 @@ http://127.0.0.1:8000/docs
 
 ## Your TODOs
 
-1. Complete model loading from MLflow in `app/model_loader.py`.
+1. Complete model loading from MLflow in `app/model_loader.py`. done
 2. Complete feature validation in `app/predictor.py`.
 3. Complete probability/prediction logic in `app/predictor.py`.
 4. Test all endpoints in Swagger.

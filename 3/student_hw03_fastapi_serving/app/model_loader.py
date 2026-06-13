@@ -32,19 +32,36 @@ class ModelService:
     - Otherwise auto-select a clean/selected run from MLFLOW_EXPERIMENT_NAME.
     - Do not crash the API on startup. Store the error in self.state.error.
     """
-
+   
+    
     def __init__(self) -> None:
         self.state = LoadedModelState()
 
     def load(self) -> None:
         # TODO: Replace this placeholder with real MLflow loading.
         # Hint:
-        #   os.environ["MLFLOW_TRACKING_USERNAME"] = config.MLFLOW_TRACKING_USERNAME
-        #   os.environ["MLFLOW_TRACKING_PASSWORD"] = config.MLFLOW_TRACKING_PASSWORD
+        os.environ["MLFLOW_TRACKING_USERNAME"] = config.MLFLOW_TRACKING_USERNAME
+        os.environ["MLFLOW_TRACKING_PASSWORD"] = config.MLFLOW_TRACKING_PASSWORD
         mlflow.set_tracking_uri(config.MLFLOW_TRACKING_URI)
-        model = mlflow.sklearn.load_model(f"runs:/{config.MLFLOW_RUN_ID}/model")
-        self.state.loaded = False
-        self.state.error = "TODO: load model from MLflow."
+         
+        try:
+            print("Loading model:", f"runs:/{config.MLFLOW_RUN_ID}/model")
+            model = mlflow.sklearn.load_model(f"runs:/{config.MLFLOW_RUN_ID}/model")
+            print("Model loaded:", type(model))
+            self.state.model = model
+            print(model.named_steps["preprocess"].transformers_)
+        except Exception as e:
+            self.state.loaded = False
+            self.state.model = None
+            self.state.error = str(e)
+        
+        if model is not None:
+            self.state.loaded = True
+            self.state.error = None
+            return self.model_info()
+        else:
+            self.state.loaded = False
+            self.state.error = "TODO: load model from MLflow."
 
     def require_model(self):
         if not self.state.loaded or self.state.model is None:

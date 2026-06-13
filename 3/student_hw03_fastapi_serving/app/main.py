@@ -57,7 +57,15 @@ def model_info() -> ModelInfoResponse:
 
 @app.post("/predict", response_model=PredictionResponse, tags=["prediction"])
 def predict(payload: ListingFeatures) -> PredictionResponse:
+    
+    
     try:
+        print(
+        (config.EXPECTED_FEATURE_COLUMNS) - (ListingFeatures.model_fields.keys()))
+
+        print(
+            (ListingFeatures.model_fields.keys()) -  (config.EXPECTED_FEATURE_COLUMNS)
+                )
         model = model_service.require_model()
     except RuntimeError as exc:
         raise HTTPException(
