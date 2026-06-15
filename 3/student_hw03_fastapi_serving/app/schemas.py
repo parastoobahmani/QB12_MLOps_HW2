@@ -29,8 +29,8 @@ class ListingFeatures(BaseModel):
                 "minimum_nights": 3,
                 "maximum_nights": 356,
                 "instant_bookable": False,
-                "is_superhost": True,
-                "listing_count": 1,
+                "host_is_superhost": True,
+                "host_listing_count": 1,
                 "total_reviews_before_cutoff": 311.0,
                 "unique_reviewers_before_cutoff": 311.0,
                 "avg_comment_len_before_cutoff": 302.1672,
@@ -61,8 +61,8 @@ class ListingFeatures(BaseModel):
     maximum_nights: int = Field(..., ge=0)
 
     instant_bookable: bool
-    is_superhost: bool
-    listing_count: int = Field(..., ge=0)
+    host_is_superhost: bool
+    host_listing_count: int = Field(..., ge=0)
 
     total_reviews_before_cutoff: Optional[float] = Field(..., ge=0)
     unique_reviewers_before_cutoff: Optional[float] = Field(..., ge=0)

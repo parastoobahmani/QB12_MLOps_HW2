@@ -37,10 +37,10 @@ Set your MLflow credentials:
 
 ```cmd
 set MLFLOW_TRACKING_URI=http://185.50.38.163:33014
-set MLFLOW_TRACKING_USERNAME=student_parastoo_bahmani
-set MLFLOW_TRACKING_PASSWORD=DvFe7_9vy3QUcAYCuVg
-set STUDENT_USERNAME=student_parastoo_bahmani
-set MLFLOW_EXPERIMENT_NAME=qbc12_hw02_student_parastoo_bahmani
+set MLFLOW_TRACKING_USERNAME=
+set MLFLOW_TRACKING_PASSWORD=
+set STUDENT_USERNAME=
+set MLFLOW_EXPERIMENT_NAME=
 ```
 
 If auto-selection fails, set your best HW02 run id manually:
