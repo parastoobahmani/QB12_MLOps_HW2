@@ -12,7 +12,7 @@
       "0": "listing_price",
       "1": "beds",
       "2": "bedrooms",
-      "3": "is_superhost",
+      "3": "host_is_superhost",
       "4": "bathrooms",
       "5": "neighbourhood_name",
       "6": "room_type",
