@@ -1,0 +1,29 @@
+digest: d51d770c
+name: dataset
+profile: '{"num_rows": 1877, "num_elements": 48802}'
+schema: '{"mlflow_colspec": [{"type": "long", "name": "accommodates", "required":
+  true}, {"type": "long", "name": "available_days_last_30d", "required": true}, {"type":
+  "long", "name": "available_days_last_90d", "required": true}, {"type": "double",
+  "name": "available_rate_last_30d", "required": true}, {"type": "double", "name":
+  "available_rate_last_90d", "required": true}, {"type": "double", "name": "avg_comment_len_before_cutoff",
+  "required": true}, {"type": "double", "name": "avg_maximum_nights_calendar_last_30d",
+  "required": true}, {"type": "double", "name": "avg_maximum_nights_calendar_last_90d",
+  "required": true}, {"type": "double", "name": "avg_minimum_nights_calendar_last_30d",
+  "required": true}, {"type": "double", "name": "avg_minimum_nights_calendar_last_90d",
+  "required": true}, {"type": "double", "name": "bathrooms", "required": false}, {"type":
+  "double", "name": "bedrooms", "required": false}, {"type": "double", "name": "beds",
+  "required": false}, {"type": "long", "name": "days_since_last_review", "required":
+  true}, {"type": "long", "name": "host_is_superhost", "required": true}, {"type":
+  "long", "name": "host_listing_count", "required": true}, {"type": "long", "name":
+  "instant_bookable", "required": true}, {"type": "double", "name": "listing_price",
+  "required": false}, {"type": "long", "name": "max_comment_len_before_cutoff", "required":
+  true}, {"type": "long", "name": "maximum_nights", "required": true}, {"type": "long",
+  "name": "minimum_nights", "required": true}, {"type": "string", "name": "neighbourhood_name",
+  "required": true}, {"type": "string", "name": "property_type", "required": true},
+  {"type": "string", "name": "room_type", "required": true}, {"type": "long", "name":
+  "total_reviews_before_cutoff", "required": true}, {"type": "long", "name": "unique_reviewers_before_cutoff",
+  "required": true}]}'
+source: '{"tags": {"mlflow.user": "student_parastoo_bahmani", "mlflow.source.name":
+  "c:\\Users\\lenovo\\mlenv311\\Lib\\site-packages\\ipykernel_launcher.py", "mlflow.source.type":
+  "LOCAL"}}'
+source_type: code

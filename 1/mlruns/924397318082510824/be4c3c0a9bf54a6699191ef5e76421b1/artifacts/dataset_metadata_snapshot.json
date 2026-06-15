@@ -1,0 +1,10 @@
+{
+  "dataset_version": "v1_student",
+  "entity_column": "listing_id",
+  "cutoff": "2026-01-01 00:00:00",
+  "PAST_WINDOW_DAYS": 90,
+  "FUTURE_WINDOW_DAYS": 30,
+  "target": "high_demand_proxy",
+  "exclusion_rules": "forbidden_columns",
+  "target_definition": "The target is to predict if the listing is a high demad proxy"
+}

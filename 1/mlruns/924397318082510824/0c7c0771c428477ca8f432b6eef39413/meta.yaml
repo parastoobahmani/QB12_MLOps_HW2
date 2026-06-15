@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/hw2/1/mlruns/924397318082510824/0c7c0771c428477ca8f432b6eef39413/artifacts
+end_time: 1781500219705
+entry_point_name: ''
+experiment_id: '924397318082510824'
+lifecycle_stage: active
+run_id: 0c7c0771c428477ca8f432b6eef39413
+run_name: v1_dummy_baseline
+run_uuid: 0c7c0771c428477ca8f432b6eef39413
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1781500214861
+status: 3
+tags: []
+user_id: student_parastoo_bahmani
